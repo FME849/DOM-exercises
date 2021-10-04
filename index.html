@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BS4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <title>DOM Exercise</title>
 </head>
-<body>
-    
 
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#exercise-01" role="tab"
+                        aria-controls="v-pills-home" aria-selected="true">Bài 1</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#exercise-02" role="tab"
+                        aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                        aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                        aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="exercise-01" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab">
+                        <h2>Tính tiền lương</h2>
+                        <form>
+                            <label for="num1">Lương 1 ngày (VND): </label>
+                            <input class="form-control" type="number" id="num1" placeholder="Nhập tiền lương 1 ngày">
+                            <label for="num2">Số ngày làm: </label>
+                            <input class="form-control" type="number" id="num2" placeholder="Nhập số ngày làm">
+                            <button class="btn btn-primary my-3" id="salary-calc" type="button">Tính lương</button>
+                            <label for="result">Tiền lương là: </label>
+                            <input id="result">
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="exercise-02" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <h2>Tính giá trị trung bình</h2>
+                        <form>
+                            <div class="row">
+                                <input type="number" class="form-control col-4"><input type="number" class="form-control col-4"><input type="number" class="form-control col-4"><input type="number" class="form-control col-4"><input type="number" class="form-control col-4">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                        aria-labelledby="v-pills-messages-tab">
+                        ...</div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                        aria-labelledby="v-pills-settings-tab">
+                        ...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BS4 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- Ex1 -->
     <script src="./js/ex1.js"></script>
 </body>
+
 </html>

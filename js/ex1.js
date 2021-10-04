@@ -11,11 +11,10 @@
  */
 
 function calcSalary() {
-    var num1 = document.getElementById("num1").value;
-    var num2 = document.getElementById("num2").value;
-    console.log(num1, num2);
+    var num1 = document.getElementById("ex01-num1").value;
+    var num2 = document.getElementById("ex01-num2").value;
     var num3 = new Intl.NumberFormat('vn-VN', {style: 'currency', currency: 'VND'}).format(num1 * num2);
-    document.getElementById("result").value = num3;
+    document.getElementById("salary").value = num3;
 }
 
 document.getElementById("salary-calc").onclick = calcSalary;

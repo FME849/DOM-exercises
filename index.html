@@ -20,49 +20,63 @@
         <div class="row">
             <div class="col-3">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#exercise-01" role="tab"
-                        aria-controls="v-pills-home" aria-selected="true">Bài 1</a>
-                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#exercise-02" role="tab"
-                        aria-controls="v-pills-profile" aria-selected="false">Bài 2</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#exercise-03" role="tab"
-                        aria-controls="v-pills-messages" aria-selected="false">Bài 3</a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-                        aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                    <a class="nav-link active" id="excercise-01-tab" data-toggle="pill" href="#exercise-01" role="tab"
+                        aria-controls="excercise-01" aria-selected="true">Bài 1</a>
+                    <a class="nav-link" id="excercise-02-tab" data-toggle="pill" href="#exercise-02" role="tab"
+                        aria-controls="excercise-02" aria-selected="false">Bài 2</a>
+                    <a class="nav-link" id="exercise-03-tab" data-toggle="pill" href="#exercise-03" role="tab"
+                        aria-controls="exercise-03" aria-selected="false">Bài 3</a>
+                    <a class="nav-link" id="exercise-04-tab" data-toggle="pill" href="#exercise-04" role="tab"
+                        aria-controls="exercise-04" aria-selected="false">Bài 4</a>
+                    <a class="nav-link" id="exercise-05-tab" data-toggle="pill" href="#exercise-05" role="tab"
+                        aria-controls="exercise-05" aria-selected="false">Bài 5</a>
                 </div>
             </div>
             <div class="col-9">
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="exercise-01" role="tabpanel"
-                        aria-labelledby="v-pills-home-tab">
+                        aria-labelledby="exercise-01-tab">
                         <h2>Tính tiền lương</h2>
                         <form>
-                            <label for="num1">Lương 1 ngày (VND): </label>
-                            <input class="form-control" type="number" id="ex01-num1" placeholder="Nhập tiền lương 1 ngày">
-                            <label for="num2">Số ngày làm: </label>
-                            <input class="form-control" type="number" id="ex01-num2" placeholder="Nhập số ngày làm">
-                            <button class="btn btn-primary my-3" id="salary-calc" type="button">Tính lương</button>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <label for="num1">Lương 1 ngày (VND): </label>
+                                    <input class="form-control" type="number" id="ex01-num1"
+                                        placeholder="Nhập tiền lương 1 ngày">
+                                </div>
+                                <div class="col-6">
+                                    <label for="num2">Số ngày làm: </label>
+                                    <input class="form-control" type="number" id="ex01-num2" placeholder="Nhập số ngày làm">
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" id="salary-calc" type="button">Tính lương</button>
                             <label for="salary">Tiền lương là: </label>
                             <input id="salary">
                         </form>
                     </div>
-                    <div class="tab-pane fade" id="exercise-02" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="tab-pane fade" id="exercise-02" role="tabpanel" aria-labelledby="excercise-02-tab">
                         <h2>Tính giá trị trung bình</h2>
                         <form>
                             <div class="row">
                                 <div class="col-4">
-                                    <input id="ex02-num1" type="number" class="form-control col-12" placeholder="Nhập số thứ 1">
+                                    <input id="ex02-num1" type="number" class="form-control col-12"
+                                        placeholder="Nhập số thứ 1">
                                 </div>
                                 <div class="col-4">
-                                    <input id="ex02-num2" type="number" class="form-control col-12" placeholder="Nhập số thứ 2">
+                                    <input id="ex02-num2" type="number" class="form-control col-12"
+                                        placeholder="Nhập số thứ 2">
                                 </div>
                                 <div class="col-4">
-                                    <input id="ex02-num3" type="number" class="form-control col-12" placeholder="Nhập số thứ 3">
+                                    <input id="ex02-num3" type="number" class="form-control col-12"
+                                        placeholder="Nhập số thứ 3">
                                 </div>
                                 <div class="col-4">
-                                    <input id="ex02-num4" type="number" class="form-control col-12" placeholder="Nhập số thứ 4">
+                                    <input id="ex02-num4" type="number" class="form-control col-12"
+                                        placeholder="Nhập số thứ 4">
                                 </div>
                                 <div class="col-4">
-                                    <input id="ex02-num5" type="number" class="form-control col-12" placeholder="Nhập số thứ 5">
+                                    <input id="ex02-num5" type="number" class="form-control col-12"
+                                        placeholder="Nhập số thứ 5">
                                 </div>
                             </div>
                             <button id="average-calc" type="button" class="btn btn-primary">Tính trung bình</button>
@@ -70,20 +84,53 @@
                             <input type="text" id="average">
                         </form>
                     </div>
-                    <div class="tab-pane fade" id="exercise-03" role="tabpanel"
-                        aria-labelledby="v-pills-messages-tab">
-                    <h2>Quy đổi tiền</h2>
-                    <form>
-                        <label for="ex03-num1">Số tiền USD: </label>
-                        <input type="number" class="form-control" id="ex03-num1" placeholder="Nhập số tiền USD">
-                        <button type="button" class="btn btn-primary" id="forex-calc">Quy đổi</button>
-                        <label for="ex03-num2">Số tiền VND: </label>
-                        <input type="text" id="ex03-num2">
-                    </form>
+                    <div class="tab-pane fade" id="exercise-03" role="tabpanel" aria-labelledby="exercise-03-tab">
+                        <h2>Quy đổi tiền</h2>
+                        <form>
+                            <label for="ex03-num1">Số tiền USD: </label>
+                            <input type="number" class="form-control" id="ex03-num1" placeholder="Nhập số tiền USD">
+                            <button type="button" class="btn btn-primary" id="forex-calc">Quy đổi</button>
+                            <label for="ex03-num2">Số tiền VND: </label>
+                            <input type="text" id="ex03-num2">
+                        </form>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                        aria-labelledby="v-pills-settings-tab">
-                        ...</div>
+                    <div class="tab-pane fade" id="exercise-04" role="tabpanel" aria-labelledby="exercise-04-tab">
+                        <h2>Tính diện tích, chu vi hình chữ nhật</h2>
+                        <form>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <label for="length">Chiều dài: </label>
+                                    <input type="number" class="form-control" id="length" placeholder="Nhập chiều dài">
+                                </div>
+                                <div class="col-6">
+                                    <label for="width">Chiều rộng: </label>
+                                    <input type="number" class="form-control" id="width" placeholder="Nhập chiều rộng">
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="rect-calc">Tính diện tích, chu vi</button>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="area">Diện tích: </label>
+                                    <input type="text" class="form-control" id="area">
+                                </div>
+                                <div class="col-6">
+                                    <label for="perimeter">Chu vi: </label>
+                                    <input type="text" class="form-control" id="perimeter">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="exercise-05" role="tabpanel"
+                        aria-labelledby="exercise-05-tab">
+                        <h2>Tính tổng 2 ký số</h2>
+                        <form>
+                            <label for="ex05-num">Số có 2 ký số:</label>
+                            <input type="number" class="form-control my-2" id="ex05-num" placeholder="Nhập số có 2 ký số">
+                            <button class="btn btn-primary" id="sum-calc" type="button">Tính tổng</button>
+                            <label for="sumNum">Tổng là: </label>
+                            <input type="text" id="sumNum">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -103,6 +150,10 @@
     <script src="./js/ex2.js"></script>
     <!-- Ex3 -->
     <script src="./js/ex3.js"></script>
+    <!-- Ex4 -->
+    <script src="./js/ex4.js"></script>
+    <!-- Ex5 -->
+    <script src="./js/ex5.js"></script>
 </body>
 
 </html>
